@@ -9,57 +9,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>High-Speed, Secure & Anonymous VPN Service | ExpressVPN</title>
+    <script>
+       function updateNavbar() {
+        var navbar = document.querySelector(".nav-container");
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    }
+    window.addEventListener("scroll", updateNavbar);
+    // To check the scroll position on page load
+    updateNavbar();
+       function updateNavbar2() {
+        var navbar2 = document.querySelector(".nav-bar");
+        if (window.scrollY > 50) {
+            navbar2.classList.add("active");
+        } else {
+            navbar2.classList.remove("active");
+        }
+    }
+    window.addEventListener("scroll", updateNavbar2);
+    // To check the scroll position on page load
+    updateNavbar2();
+
+    </script>
 </head>
 <header>
-    <div>
+        <div class="nav-container">
         <nav class="nav-bar">
-            <img class= "logo-express" src="ExpressVPN.svg"/>
-            </img>
+            <div class="logo">
+            <img class= "logo-express" src="expressvpn-logo-red.svg"></img>
+            </div>
             <ul class='nav-elements' style= "list-style: none;">
-                <li class="what-VPN big"><a>What is a VPN?</a></li>
-                <li class="what-offer big"><a>What we Offer?</a></li>
-                <li class="download big"><a>Download VPN</a></li>
-                <li class="support small"><a>Support</a></li>
-                <li class="blog small"><a>Blog</a></li>
-                <li class="my-account small"><a>My Account</a></li>
-                <li class="English big"><a>English</a></li>
-                <li class="get-started"><button>Get Started</button></li>
+                <li class="what-VPN big"><a href="#">What is a VPN?</a></li>
+                <li class="what-offer big"><a href="#">What we Offer?</a></li>
+                <li class="download big"><a href="#">Download VPN</a></li>
+                <li class="support small"><a href="#">Support</a></li>
+                <li class="blog small"><a href="#">Blog</a></li>
+                <li class="my-account small"><a href="#">My Account</a></li>
+                <li class="English big"><a href="#">English</a></li>
+                <li class="get-started"><button class="nav-start">Get Started</button></li>
             </ul>
+
         </nav>
-    </div>
+        </div>
 </header>
+<div class="hero-backImg">
+    <img src="https://ftr.imgix.net/FQBOc9Uh5e22pHikmfCJR/3ce3022343c7ad918545a6a2e01f36b5/homepage-pingzhu-hero-bg-opt-v2.jpg?auto=format%2Ccompress&cs=srgb&fit=max&q=60&w=1920&s=ae7331908c13b70917d2f5b72adea99b" class="background-hero"/>
+</div>
+<div class="hero-frontImg">
+    <img src="https://ftr.imgix.net/3EOOAeQsNMQBJkX2HPZqJn/7b4c25bcca074a531f74bbda530f87df/homepage-pingzhu-hero-figures-v2-opt__1___3_.png?auto=format%2Ccompress&cs=srgb&fit=max&q=60&w=572&s=c3dbb561904dda8b156ecf37ae3d46cf" class="background-front"/>
+</div>
 <section class="hero">
     <div class="hero-front">
         <h1 class="tagline">The VPN that just works</h1>
         <h4 class="subline">Go further with the #1 trusted leader in VPN</h4>
-        <button>Get ExpressVPN -></button>
+        <div class="hero-start"><button >Get ExpressVPN </button></div>
         <p class='gurantee'>30-DAY MONEY-BACK GUARANTEE</p>
     </div>
 </section>
-<body>
-    <div class="features-div">
-        <section class="feature">
-            <img src='brickwall-peek-through-with-cursor-opt.png'/>
-            <h2 class="secure-feature">Secure access, worldwide</h2>
-            <p class="sub-feature">Connect reliably from anywhere, to anywhere. Our network of high-speed servers across 94 countries puts you in control.</p>
-            <button>Get ExpressVPN</button>
-            <img src='unexposed-internet-lamp-opt.png'/>
-            <h2 class="safer-feature">Just one click to a safer internet</h2>
-            <p class="sub-safer">Going online doesn’t have to mean being exposed. Whether you’re shopping from your desk or just connecting at a cafe, keep your personal information more private and secure.</p>
-            <img src="extend-your-coverage-with-a-vpn.png"/>
-            <h2 class="usage">Use on any device</h2>
-            <p class="sub-usage">Phone, tablet, computer, router—no matter where you are or what devices you’re using, a single ExpressVPN subscription has got you covered.</p>
-            <button>Get ExpressVPN</button>
-        </section>
-        
-        <section class="feature-horizontal">
-            <h2 class="protection">Stronger data protection</h2>
-            <p class="sub-portect">Take charge of your online privacy and security with best-in-class encryption.</p>
-            <h2 class="working">Work seamlessly everywhere</h2>
-            <p class="sub-working">Experience the internet the way it’s meant to be. On the go, or on your couch.</p>
-            <h2 class="connect">Lightning-quick connectivity</h2>
-            <p class="sub-connect">Our VPN network is built for speed, powered by next-generation technology.</p>
-        </section>
-    </div>
-</body>
+
 </html>
