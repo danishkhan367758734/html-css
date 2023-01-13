@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap'); 
+
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav-start{
+    font-family: 'Inter','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial','sans-serif';
+    border:none;
+    font-weight: 400;
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 12px 12px 12px;
+    margin: 0;
+    color:rgb(64, 133, 115);
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 3px solid rgb(64, 133, 115);
+    cursor: pointer;
+   
+}
+.nav-start:hover{
+    color: black;
+
+    border-color: rgb(151, 221, 46);
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(151, 221, 46);
+}
+.English{
+    font-size: 18px;
+}
+
+
+ul li a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul li a:hover{
+    color: rgb(64, 133, 115);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+
+.nav-bar{
+    font-family: 'Inter','Gill Sans', 'Trebuchet MS', sans-serif;
+    position: fixed;
+    display: flex;
+    height: 8vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    padding-left: 8%;
+    padding-right:8%;
+    width:100%;
+    opacity: 1;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    font-size: 18px;
+}
+.nav-bar.active{
+    transition: 0.3s ease-in;
+    font-size: 16px;
+}
+.nav-container{
+
+    z-index: 4;
+    transition: 0.5s ease-out;
+}
+.nav-container.scrolled{
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    z-index: 4;
+    opacity: 1;
+    font-size: 14px;
+    transition: 0.3s ease-in;
+    
+    background-color: white;
+}
+.nav-bar .nav-elements{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.small{
+    font-size: 16px;
+}
+.nav-bar .logo .logo-express{
+    width: 15rem;
+    height: 10rem;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.hero{
+    font-family: 'Inter';
+    display: flex;
+    margin: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    top: -122vh;
+    opacity: 1;
+}
+.hero-backImg{
+    display: flex;
+    margin:0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -32vh;
+    z-index: 0;
+}
+.background-hero{
+    width: 100%;
+    height: 10%;
+}
+.hero-frontImg{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    top: -56.5vh;
+}
+
+.tagline{
+    font-family: 'Playfair Display',Georgia,"Serif";
+    color: #001d2f;
+    font-size: 100px;
+}
+.subline{
+    display: flex;
+    position: relative;
+    top: -70px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+
+.hero-start{
+    display: flex;
+    position: relative;
+    top: -4vh;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+}
+.hero button{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Inter';
+    color: white;
+    border-radius: 30px;
+    background-color: #0f866c;
+    border: none;
+    font-size: 20px;
+}
+.hero button:hover{
+    color: black;
+    background-color: rgb(151, 221, 46);
+    transition: 0.3s ease-in-out;
+}
+.gurantee{
+    font-weight: 200;
+    font-size: 10px;
+    position: relative;
+    top: -4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
